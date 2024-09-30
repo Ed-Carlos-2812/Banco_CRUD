@@ -8,15 +8,16 @@ import android.os.Bundle;
 
 public class Cadastro extends AppCompatActivity {
 
-    private AppCompatEditText nome;
+    private AppCompatButton btn_cadastrar;
 
-    private AppCompatButton botao_cadastro;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro);
 
+
+        btn_cadastrar = findViewById(R.id.btn_cadastrar);
 
 
 
