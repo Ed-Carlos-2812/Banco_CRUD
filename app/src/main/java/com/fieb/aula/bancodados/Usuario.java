@@ -1,20 +1,21 @@
 package com.fieb.aula.bancodados;
 
-public class usuario {
+public class Usuario {
 
-    private String nome;
+    private static String nome;
 
-    private String email;
+    private static String email;
 
-    private String senha;
+    private static String senha;
 
-    public usuario(String nome, String email, String senha) {
+
+    public Usuario(String nome, String email, String senha) {
         this.nome = nome;
         this.email = email;
         this.senha = senha;
     }
 
-    public String getNome() {
+    public static String getNome() {
         return nome;
     }
 
@@ -22,7 +23,7 @@ public class usuario {
         this.nome = nome;
     }
 
-    public String getEmail() {
+    public static String getEmail() {
         return email;
     }
 
@@ -30,7 +31,7 @@ public class usuario {
         this.email = email;
     }
 
-    public String getSenha() {
+    public static String getSenha() {
         return senha;
     }
 

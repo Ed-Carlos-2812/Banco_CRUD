@@ -5,23 +5,29 @@ import android.content.Context;
 import java.sql.PreparedStatement;
 
 public class UsuarioCrud {
-    public static int InserirUsuario (usuario usuario, Context ctx){
-        int resposta = 0;
 
-        try {
-        PreparedStatement pst = conexaoBanco.conectar((TesteConexaoBD) ctx).prepareStatement(
-                "Insert Into usuario (nome, email, senha) " + "values (?,?,?)");
+public static int inserirUsuario (Usuario usuario, Context ctx) {
 
-        pst.setString(1, usuario.getNome());
-        pst.setString(2, usuario.getEmail());
-        pst.setString(3, usuario.getSenha());
+    int resposta = 0;
 
-        resposta = pst.executeUpdate();
+    try {
+        PreparedStatement pst = conexaoBanco.conectar(ctx).prepareStatement(
+                "Insert Into Usuario (nome, email, senha)"+ "values (?,?,?)");
 
-        } catch (Exception e){
-            e.getMessage();
-        }
+       pst.setString(1, Usuario.getNome());
+       pst.setString(2, Usuario.getEmail());
+       pst.setString(3, Usuario.getSenha());
 
-        return resposta;
-        }
+
+       resposta = pst.executeUpdate();
+    } catch (Exception e){
+        e.getMessage();
+    }
+
+
+    return resposta;
+
 }
+
+}
+
