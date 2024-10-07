@@ -15,7 +15,7 @@ public class conexaoBanco {
             politica = new StrictMode.ThreadPolicy.Builder().permitAll().build();
             StrictMode.setThreadPolicy(politica);
             Class.forName("net.sourceforge.jtds.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:jtds:sqlserver://192.168.0.24;"+
+            conn = DriverManager.getConnection("jdbc:jtds:sqlserver://172.19.0.57;"+
                     "databaseName=Banco_Android;user=sa;password=@ITB123456;");
 
         } catch (SQLException e){

@@ -7,45 +7,41 @@
     tools:context=".Login">
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="247dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="101dp"
-        android:layout_marginTop="113dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="109dp"
+        android:id="@+id/editTextEmail"
+        android:layout_width="267dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="46dp"
         android:ems="10"
         android:hint="Seu E-mail"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNome" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="247dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="101dp"
-        android:layout_marginTop="109dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="108dp"
+        android:id="@+id/editTextPassword"
+        android:layout_width="293dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="34dp"
         android:ems="10"
         android:hint="Sua Senha"
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/loginRealizado"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/novoCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="127dp"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="42dp"
         android:layout_marginEnd="174dp"
-        android:layout_marginBottom="19dp"
+        android:layout_marginBottom="124dp"
         android:text="Cadastrar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,15 +50,29 @@
 
     <Button
         android:id="@+id/loginRealizado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="149dp"
-        android:layout_marginTop="53dp"
-        android:layout_marginEnd="174dp"
-        android:layout_marginBottom="67dp"
+        android:layout_width="110dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="183dp"
         android:text="Entrar"
-        app:layout_constraintBottom_toTopOf="@+id/novoCadastro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="227dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginBottom="41dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/editTextEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

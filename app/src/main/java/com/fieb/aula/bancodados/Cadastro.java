@@ -59,7 +59,7 @@ btn_cadastrar.setOnClickListener(new View.OnClickListener() {
 
       int res = UsuarioCrud.inserirUsuario(user, getBaseContext());
       if (res <=0){
-          Snackbar.make(btn_cadastrar, "Dados não inseridos!", Snackbar.LENGTH_LONG).show();
+          Snackbar.make(btn_cadastrar, "E-mail já cadastrado!", Snackbar.LENGTH_LONG).show();
       } else {
           Snackbar.make(btn_cadastrar, "Dados Cadastrados com Sucesso", Snackbar.LENGTH_LONG).show();
       }
